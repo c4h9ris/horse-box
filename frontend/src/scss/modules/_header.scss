@@ -4,16 +4,25 @@
 
 header {
 	background-color: #000;
-	opacity: 0.75;
 	z-index: 10;
 
 	.navbar-default {
 		background-color: #000;
-		opacity: 0.75;
 	}
 	.navbar { 
 		border: none;
 		margin-bottom: 0;
+		a {
+			color: #fff!important;
+			&:hover {
+				text-decoration: underline!important;
+			}
+		}
+		.navbar-brand {
+			font-weight: bold;
+			&:hover{
+				text-decoration: none!important;
+			}
+		}
 	}
-
 }

@@ -4,13 +4,17 @@ html {
 body {
 	height: 100%;
 }
+.row {
+	margin-left: 0!important;
+	margin-right: 0!important;
+}
 section.main {
 	background-color: #fff;
 }
 section.video {
 	height: 100%;
 	background-color: #999;
-
+	position: relative;
 	video {
 		position: absolute; 
 		right: 0; 
@@ -21,5 +25,40 @@ section.video {
 		height: auto; 
 		z-index: 0;
 		background-size: cover;
+	}
+	.landing {
+    	position:absolute;      
+	    width: 644px;    
+	    height: 310px;
+	    top: 50%;
+	    left: 50%;
+	    margin-top: -155px; /* negative number 1/2 height */
+	    margin-left: -321px!important; /* negative number 1/2 width */
+		.info-panel {
+			h1 {
+				color: #fff;
+				font-size: 50px;
+				font-weight: bold;
+				line-height: 67px;
+				margin-bottom: 25px;
+			}
+			p {
+				color: #fff;
+				font-size: 16px;
+				margin-bottom: 25px;
+			}
+			.btn {
+				font-size: 24px;
+				padding: 10px 60px;
+				margin-bottom: 10px;
+				background-color: #458B00;
+				border: none;
+				color: #fff;
+			}
+			a {
+				text-decoration: underline;
+				color: #458B00;
+			}
+		}
 	}
 }
