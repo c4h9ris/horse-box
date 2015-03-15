@@ -18,40 +18,6 @@
   font-family: "Oswald", sans-serif;
 }
 
-/**
-	Header SCSS.
-**/
-/* line 5, ../../frontend/src/scss/modules/_header.scss */
-header {
-  background-color: #000;
-  z-index: 10;
-}
-/* line 9, ../../frontend/src/scss/modules/_header.scss */
-header .navbar-default {
-  background-color: #000;
-}
-/* line 12, ../../frontend/src/scss/modules/_header.scss */
-header .navbar {
-  border: none;
-  margin-bottom: 0;
-}
-/* line 15, ../../frontend/src/scss/modules/_header.scss */
-header .navbar a {
-  color: #fff !important;
-}
-/* line 17, ../../frontend/src/scss/modules/_header.scss */
-header .navbar a:hover {
-  text-decoration: underline !important;
-}
-/* line 21, ../../frontend/src/scss/modules/_header.scss */
-header .navbar .navbar-brand {
-  font-weight: bold;
-}
-/* line 23, ../../frontend/src/scss/modules/_header.scss */
-header .navbar .navbar-brand:hover {
-  text-decoration: none !important;
-}
-
 /* line 1, ../../frontend/src/scss/base/_scaffolding.scss */
 html {
   height: 100%;
@@ -69,17 +35,18 @@ body {
 }
 
 /* line 11, ../../frontend/src/scss/base/_scaffolding.scss */
-section.main {
-  background-color: #fff;
+.main {
+  background-color: #7AB55C;
+  height: 100%;
 }
 
-/* line 14, ../../frontend/src/scss/base/_scaffolding.scss */
+/* line 15, ../../frontend/src/scss/base/_scaffolding.scss */
 section.video {
   height: 100%;
   background-color: #999;
   position: relative;
 }
-/* line 18, ../../frontend/src/scss/base/_scaffolding.scss */
+/* line 19, ../../frontend/src/scss/base/_scaffolding.scss */
 section.video video {
   position: absolute;
   right: 0;
@@ -91,19 +58,19 @@ section.video video {
   z-index: 0;
   background-size: cover;
 }
-/* line 29, ../../frontend/src/scss/base/_scaffolding.scss */
+/* line 30, ../../frontend/src/scss/base/_scaffolding.scss */
 section.video .landing {
   position: absolute;
-  width: 644px;
+  width: 698px;
   height: 310px;
   top: 50%;
   left: 50%;
-  margin-top: -155px;
+  margin-top: -170px;
   /* negative number 1/2 height */
-  margin-left: -321px !important;
+  margin-left: -355px !important;
   /* negative number 1/2 width */
 }
-/* line 38, ../../frontend/src/scss/base/_scaffolding.scss */
+/* line 39, ../../frontend/src/scss/base/_scaffolding.scss */
 section.video .landing .info-panel h1 {
   color: #fff;
   font-size: 50px;
@@ -111,25 +78,30 @@ section.video .landing .info-panel h1 {
   line-height: 67px;
   margin-bottom: 25px;
 }
-/* line 45, ../../frontend/src/scss/base/_scaffolding.scss */
+/* line 46, ../../frontend/src/scss/base/_scaffolding.scss */
 section.video .landing .info-panel p {
   color: #fff;
   font-size: 16px;
   margin-bottom: 25px;
 }
-/* line 50, ../../frontend/src/scss/base/_scaffolding.scss */
+/* line 51, ../../frontend/src/scss/base/_scaffolding.scss */
 section.video .landing .info-panel .btn {
   font-size: 24px;
   padding: 10px 60px;
   margin-bottom: 10px;
-  background-color: #458B00;
+  background-color: #7AB55C;
   border: none;
   color: #fff;
+  transition: 0.5s;
 }
-/* line 58, ../../frontend/src/scss/base/_scaffolding.scss */
+/* line 59, ../../frontend/src/scss/base/_scaffolding.scss */
+section.video .landing .info-panel .btn:hover {
+  background-color: #458B00;
+}
+/* line 63, ../../frontend/src/scss/base/_scaffolding.scss */
 section.video .landing .info-panel a {
   text-decoration: underline;
-  color: #458B00;
+  color: #7AB55C;
 }
 
 /*
@@ -3825,6 +3797,77 @@ input[type="button"].btn-block {
     display: none !important;
   }
 }
+/* line 1, ../../frontend/src/scss/base/_typography.scss */
+h1, h2, h3, h4, h5, p {
+  color: #fff;
+}
+
+/* line 4, ../../frontend/src/scss/base/_typography.scss */
+p {
+  letter-spacing: 0.5px;
+}
+
+/* line 7, ../../frontend/src/scss/base/_typography.scss */
+h1 {
+  color: #fff !important;
+}
+
+/**
+	Header SCSS.
+**/
+/* line 7, ../../frontend/src/scss/modules/_header.scss */
+header .navbar-default {
+  background-color: #222;
+}
+/* line 10, ../../frontend/src/scss/modules/_header.scss */
+header .navbar {
+  border: none;
+  margin-bottom: 0;
+}
+/* line 13, ../../frontend/src/scss/modules/_header.scss */
+header .navbar a {
+  color: #fff !important;
+}
+/* line 15, ../../frontend/src/scss/modules/_header.scss */
+header .navbar a:hover {
+  text-decoration: underline !important;
+  color: #458B00 !important;
+}
+/* line 20, ../../frontend/src/scss/modules/_header.scss */
+header .navbar .navbar-brand {
+  font-weight: bold;
+}
+/* line 22, ../../frontend/src/scss/modules/_header.scss */
+header .navbar .navbar-brand:hover {
+  text-decoration: none !important;
+}
+
+/* Footer */
+/* line 3, ../../frontend/src/scss/modules/_footer.scss */
+footer {
+  background-color: #222;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* line 9, ../../frontend/src/scss/modules/_footer.scss */
+footer p {
+  color: #fff;
+  font-size: 12px;
+  margin: 14px 0 14px 0;
+}
+/* line 13, ../../frontend/src/scss/modules/_footer.scss */
+footer p span {
+  color: #7AB55C;
+  font-size: 16px;
+  margin-right: 10px;
+  line-height: 12px;
+}
+/* line 20, ../../frontend/src/scss/modules/_footer.scss */
+footer .facebook {
+  margin-top: 8px;
+}
+
 /*
 
     Modules

@@ -8,8 +8,9 @@ body {
 	margin-left: 0!important;
 	margin-right: 0!important;
 }
-section.main {
-	background-color: #fff;
+.main {
+	background-color: #7AB55C;
+	height: 100%;
 }
 section.video {
 	height: 100%;
@@ -28,12 +29,12 @@ section.video {
 	}
 	.landing {
     	position:absolute;      
-	    width: 644px;    
+	    width: 698px;    
 	    height: 310px;
 	    top: 50%;
 	    left: 50%;
-	    margin-top: -155px; /* negative number 1/2 height */
-	    margin-left: -321px!important; /* negative number 1/2 width */
+	    margin-top: -170px; /* negative number 1/2 height */
+	    margin-left: -355px!important; /* negative number 1/2 width */
 		.info-panel {
 			h1 {
 				color: #fff;
@@ -51,13 +52,17 @@ section.video {
 				font-size: 24px;
 				padding: 10px 60px;
 				margin-bottom: 10px;
-				background-color: #458B00;
+				background-color: #7AB55C;
 				border: none;
 				color: #fff;
+				transition: 0.5s;
+				&:hover {
+					background-color: #458B00;
+				}
 			}
 			a {
 				text-decoration: underline;
-				color: #458B00;
+				color: #7AB55C;
 			}
 		}
 	}

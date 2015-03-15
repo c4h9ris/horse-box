@@ -1,0 +1,23 @@
+/* Footer */
+
+footer {
+	background-color: #222;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	p {
+		color: #fff;
+		font-size: 12px;
+		margin: 14px 0 14px 0;
+		span {
+			color: #7AB55C;
+			font-size: 16px;
+			margin-right: 10px;
+			line-height: 12px;
+		}
+	}
+	.facebook {
+		margin-top: 8px;
+	}
+}

@@ -3,11 +3,9 @@
 **/
 
 header {
-	background-color: #000;
-	z-index: 10;
 
 	.navbar-default {
-		background-color: #000;
+		background-color: #222;
 	}
 	.navbar { 
 		border: none;
@@ -16,6 +14,7 @@ header {
 			color: #fff!important;
 			&:hover {
 				text-decoration: underline!important;
+				color: #458B00!important;
 			}
 		}
 		.navbar-brand {

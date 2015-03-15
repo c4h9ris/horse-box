@@ -11,7 +11,6 @@
 
  */
 @import "variables";
-@import 'modules/header';  
 @import 'base/scaffolding';
 @import "base/bootstrap-vars";
 @import 'base/bootstrap-src';
@@ -20,7 +19,8 @@
 @import 'base/media-queries';
 @import 'base/custom-mixins';
 @import 'base/typography'; 
-
+@import 'modules/header';  
+@import 'modules/footer'; 
 
 
 /*
